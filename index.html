@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gran Oscar — Residências de Alto Padrão em Moema</title>
+  <meta name="description"
+    content="Gran Oscar: projeto exclusivo em Moema — plantas generosas, wellness, piscinas, quadras, espaços culturais e serviços premium." />
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <style>
+    :root {
+      --accent: #0f1724;
+      --gold: #b0843a;
+      --muted: #6b7280;
+      --pastel-1: #f7efe6;
+      --pastel-2: #eef6f6;
+      --glass: rgba(15, 23, 36, 0.04);
+      --max-width: 1150px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Reset & layout */
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--accent);
+      font-size: 16px;
+      line-height: 1.4
+    }
+
+    .wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 16px
+    }
+
+    /* Header (mobile-first) */
+    header.site {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px 0
+    }
+
+    .brand {
+      display: flex;
+      gap: 10px;
+      align-items: center
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--gold), #f3e1b8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--accent)
+    }
+
+    .site-title {
+      font-weight: 800;
+      font-size: 1rem
+    }
+
+    .site-sub {
+      font-size: 0.78rem;
+      color: var(--muted)
+    }
+
+    /* Hamburger */
+    .menu-toggle {
+      background: transparent;
+      border: 0;
+      padding: 8px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    /* Mobile nav (hidden by default) */
+    nav.mobile {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.98);
+      z-index: 1200;
+      display: none;
+      flex-direction: column;
+      padding: 20px;
+      gap: 18px
+    }
+
+    nav.mobile.open {
+      display: flex
+    }
+
+    nav.mobile .close {
+      align-self: flex-end
+    }
+
+    nav.mobile a {
+      font-size: 1.05rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 700
+    }
+
+    /* Hero (mobile) */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 10px
+    }
+
+    .hero-card {
+      background: #fff;
+      padding: 16px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(15, 23, 36, 0.06)
+    }
+
+    .strap {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(176, 126, 56, 0.12);
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 0.8rem
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      margin: 8px 0 6px
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 0.95rem
+    }
+
+    .specs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px
+    }
+
+    .spec {
+      flex: 1 1 120px;
+      background: var(--pastel-2);
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 0.86rem
+    }
+
+    .cta-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 12px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      padding: 12px;
+      border-radius: 12px;
+      border: 0;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 0.95rem
+    }
+
+    .btn.ghost {
+      background: transparent;
+      border: 1px dashed rgba(15, 23, 36, 0.06);
+      color: var(--muted)
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid rgba(15, 23, 36, 0.08);
+      color: var(--accent)
+    }
+
+    /* Placeholders */
+    .placeholder {
+      width: 100%;
+      border-radius: 12px;
+      padding: 18px;
+      background: var(--pastel-1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-weight: 800
+    }
+
+    .placeholder.small {
+      padding: 10px;
+      font-size: 0.9rem
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 14px
+    }
+
+    .feature {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      background: #fff;
+      padding: 12px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(15, 23, 36, 0.04)
+    }
+
+    .feature ion-icon {
+      font-size: 22px;
+      color: var(--gold);
+      min-width: 32px
+    }
+
+    .feature h3 {
+      margin: 0;
+      font-size: 1rem
+    }
+
+    .feature p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 12px
+    }
+
+    /* Map */
+    .map {
+      height: 220px;
+      border-radius: 10px;
+      overflow: hidden
+    }
+
+    /* Contact form */
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 12px
+    }
+
+    .form input,
+    .form textarea {
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      font-size: 0.95rem
+    }
+
+    .form button {
+      padding: 12px;
+      border-radius: 10px;
+      border: 0;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800
+    }
+
+    footer.site {
+      margin-top: 24px;
+      padding-top: 12px;
+      border-top: 1px solid var(--glass);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 0.9rem
+    }
+
+    /* Floating contact bar */
+    .contact-bar {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 1300
+    }
+
+    .contact-bar a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700
+    }
+
+    .contact-bar .wsp {
+      background: #25d366
+    }
+
+    .contact-bar .mail {
+      background: var(--accent)
+    }
+
+    /* Larger screens adjustments */
+    @media(min-width:820px) {
+      .wrap {
+        padding: 28px
+      }
+
+      header.site {
+        padding: 14px 0
+      }
+
+      .menu-toggle {
+        display: none
+      }
+
+      nav.mobile {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        background: transparent;
+        padding: 0;
+        gap: 16px;
+        align-items: center
+      }
+
+      nav.mobile a {
+        font-size: 0.95rem
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 420px;
+        gap: 24px
+      }
+
+      .hero-card {
+        padding: 24px
+      }
+
+      h1 {
+        font-size: 1.9rem
+      }
+
+      .cta-row {
+        flex-direction: row
+      }
+
+      .specs {
+        margin-top: 18px
+      }
+
+      .features {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .gallery {
+        grid-template-columns: 2fr 1fr
+      }
+
+      .map {
+        height: 320px
+      }
+
+      footer.site {
+        flex-direction: row;
+        justify-content: space-between
+      }
+
+      .contact-bar {
+        right: 18px;
+        bottom: 18px
+      }
+    }
+
+    /* Hover effects for contact icons */
+    div[style*="text-align:center"] a {
+      transition: transform 0.18s ease, color 0.18s ease, opacity 0.18s ease;
+      padding: 8px;
+      border-radius: 8px;
+    }
+    div[style*="text-align:center"] a:hover,
+    div[style*="text-align:center"] a:focus {
+      transform: translateY(-2px) scale(1.1);
+      color: var(--gold);
+      opacity: 0.9;
+      outline: none;
+    }
+    div[style*="text-align:center"] a svg {
+      transition: transform 0.18s ease;
+    }
+    div[style*="text-align:center"] a:hover svg,
+    div[style*="text-align:center"] a:focus svg {
+      transform: scale(1.1);
+    }
+
+    /* Fullscreen overlay styles */
+    .fs-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 16px;
+      cursor: pointer;
+    }
+    .fs-overlay.open {
+      display: flex;
+    }
+    .fs-overlay img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      cursor: zoom-out;
+    }
+    .fs-trigger {
+      cursor: zoom-in;
+    }
+
+    /* Card do corretor styles */
+    .corretor-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(15, 23, 36, 0.06);
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+    .corretor-info {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .corretor-foto {
+      width: 80px;
+      height: 120px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(15, 23, 36, 0.1);
+      flex: 0 0 auto;
+    }
+    .corretor-details {
+      flex: 1 1 auto;
+      min-width: 200px;
+      text-align: left;
+    }
+    .corretor-nome {
+      margin: 0 0 4px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .corretor-creci {
+      margin: 0 0 12px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .corretor-contacts {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .corretor-contacts a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid rgba(15, 23, 36, 0.08);
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+    }
+    .corretor-contacts a:hover,
+    .corretor-contacts a:focus {
+      transform: translateY(-1px) scale(1.04);
+      background: rgba(176, 132, 58, 0.06);
+      box-shadow: 0 4px 12px rgba(15, 23, 36, 0.1);
+      outline: none;
+    }
+    .corretor-contacts ion-icon {
+      font-size: 16px;
+      color: var(--gold);
+    }
+
+    @media(min-width:820px) {
+      .corretor-foto {
+        width: 100px;
+        height: 100px;
+      }
+      .corretor-nome {
+        font-size: 1.2rem;
+      }
+      .corretor-creci {
+        font-size: 0.9rem;
+      }
+      .corretor-contacts a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="brand">
+        <div class="logo">GO</div>
+        <div>
+          <div class="site-title">Gran Oscar</div>
+          <div class="site-sub">Residências de Alto Padrão — Moema</div>
+        </div>
+      </div>
+
+      <button class="menu-toggle" aria-label="Abrir menu" id="openMenu">
+        <ion-icon name="menu-outline" size="large"></ion-icon>
+      </button>
+
+      <nav class="mobile" id="mobileNav" aria-hidden="true">
+        <button class="close" id="closeMenu" aria-label="Fechar menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#plantas">Plantas</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+      <article class="hero-card" aria-labelledby="heroTitle">
+        <span class="strap">Lançamento Exclusivo</span>
+        <h1 id="heroTitle">O endereço onde arte, espaço e privacidade se encontram</h1>
+        <p class="lead">Gran Oscar é um projeto pensado para quem deseja morar envolto em estética e conforto: plantas
+          generosas (370–657m²), pé-direito amplo, acabamento premium e uma programação de serviços que transforma a
+          casa em um clube privativo.</p>
+
+        <div class="specs" aria-hidden="false">
+          <div class="spec">
+            <div>42 unidades</div>
+            <div style="font-weight:600;color:var(--muted);font-size:0.85rem">2 torres</div>
+          </div>
+          <div class="spec">
+            <div>370 — 657 m²</div>
+            <div style="font-weight:600;color:var(--muted);font-size:0.85rem">Tipologias generosas</div>
+          </div>
+          <div class="spec">
+            <div>4 — 6 vagas</div>
+            <div style="font-weight:600;color:var(--muted);font-size:0.85rem">Vagas privativas</div>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn" href="https://wa.me/5511918975200?text=Tenho%20interesse%20no%20Gran%20Oscar" target="_blank">
+            <ion-icon name="logo-whatsapp"></ion-icon>Falar no WhatsApp
+          </a>
+          <a class="btn secondary" href="https://wa.me/5511918975200?text=Gostaria%20do%20book%20do%20Gran%20Oscar">Receber Book</a>
+          <a class="btn ghost" href="https://wa.me/5511918975200?text=Gostaria%20das%20plantas%20do%20Gran%20Oscar">Ver Plantas</a>
+        </div>
+
+        <p style="margin-top:12px;color:var(--muted);font-size:0.95rem"><strong>Por que Gran Oscar?</strong> Praça
+          central com espelho d'água, wellness (cold plunge, saunas, salas de massagem), quadra de tênis, piscina com
+          raia, lounge gourmet e espaços de arte com curadoria. Um projeto que nasce para encantar.</p>
+      </article>
+
+      <aside>
+        <div class="placeholder" style="height:320px; padding: 0;">
+          <img src="media/fachada.jpeg" alt="Fachada do empreendimento Gran Oscar Ibirapuera em Moema"
+            title="Fachada — Gran Oscar Ibirapuera" loading="lazy" class="fs-trigger"
+            style="width: 100%; height:100%; padding: 0; margin: 0;object-fit:cover; object-position:center; border-radius:8px;" />
+
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px; padding: 0;">
+          <div class="placeholder small" style="width: 100%; height: 100%; padding: 0;">
+            <img src="media/praca.jpeg" alt="Fachada do empreendimento Gran Oscar Ibirapuera em Moema"
+              title="Fachada — Gran Oscar Ibirapuera" loading="lazy" class="fs-trigger"
+              style="width: 100%; height:100%; padding: 0; margin: 0;object-fit:cover; object-position:center; border-radius:8px;" />
+          </div>
+          <div class="placeholder small" style="width: 100%; height: 100%; padding: 0;">
+            <img src="media/embasamento.jpeg" alt="Fachada do empreendimento Gran Oscar Ibirapuera em Moema"
+              title="Fachada — Gran Oscar Ibirapuera" loading="lazy" class="fs-trigger"
+              style="width: 100%; height:100%; padding: 0; margin: 0;object-fit:cover; object-position:center; border-radius:8px;" />
+          </div>
+        </div>
+      </aside>
+    </section>
+    <br>
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais" style="margin-top:18px">
+      <h2>Diferenciais que encantam</h2>
+      <p style="color:var(--muted);margin-top:6px">Espaços pensados para bem-estar, convivência e privacidade — da
+        rotina ao entretenimento.</p>
+
+      <div class="features">
+        <div class="feature">
+          <ion-icon name="leaf-outline"></ion-icon>
+          <div>
+            <h3>Praça central & Paisagismo</h3>
+            <p>Projeto paisagístico assinado com espelho d'água e trajetos de contemplação.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <ion-icon name="fitness-outline"></ion-icon>
+          <div>
+            <h3>Wellness & Spa</h3>
+            <p>Cold plunge, sauna, pilates e salas de massagem para rotina de saúde e relaxamento.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <ion-icon name="tennisball-outline"></ion-icon>
+          <div>
+            <h3>Sport & Club</h3>
+            <p>Quadra de tênis, courts, piscina com raia e club house para eventos privados.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <ion-icon name="people-outline"></ion-icon>
+          <div>
+            <h3>Kids & Family</h3>
+            <p>Brinquedoteca, kids gourmet e espaços para teens com segurança e criatividade.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <ion-icon name="cafe-outline"></ion-icon>
+          <div>
+            <h3>Serviços Premium</h3>
+            <p>Lobby bar, beauty care, coworking e concierge — rotina prática e refinada.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          <div>
+            <h3>Espaços de Arte</h3>
+            <p>Galeria, ateliers e áreas de convivência com curadoria para ações culturais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <!-- PLANTAS 
+    <section id="plantas" style="margin-top:18px">
+      <h2>Plantas & Tipologias</h2>
+      <p style="color:var(--muted);margin-top:6px">Ambientes amplos e flexíveis, naturalmente iluminados — perfeitos
+        para coleções de arte e receber convidados.</p>
+
+      <div class="gallery">
+        <div class="placeholder" style="height:220px">Planta Principal — 760x220</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <div class="placeholder small" style="height:120px">Planta A — 360x120</div>
+          <div class="placeholder small" style="height:120px">Planta B — 360x120</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+        <a class="btn" href="https://wa.me/5511918975200?text=Gostaria%20de%20receber%20mais%20informações%20do%20Gran%20Oscar">Quero Condições</a>
+        <a class="btn secondary" href="https://wa.me/5511918975200?text=Gostaria%20de%20receber%20mais%20informações%20do%20Gran%20Oscar">Receber Proposta</a>
+      </div>
+    </section>
+    <br>
+    -->
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao" style="margin-top:18px">
+      <h2>Localização — Moema</h2>
+      <p style="color:var(--muted);margin-top:6px">Posição privilegiada próxima ao Parque Ibirapuera, shoppings e
+        escolas internacionais.</p>
+      <h3>Conheça seu novo endereço:</h3>
+      <!-- Mapa - Google (Embed via busca do endereço do PDF) -->
+      <div class="map-wrap"
+        style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; border:1px solid rgba(255,255,255,0.08);">
+        <iframe
+          src="https://www.google.com/maps?q=Av.+Indian%C3%B3polis,+500+%26+Alameda+dos+Nhambiquaras,+367,+Moema,+S%C3%A3o+Paulo,+SP&hl=pt-BR&z=16&output=embed"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+    <br>
+    <!-- DOWNLOAD 
+    <section id="download" style="margin-top:18px">
+      <h2>Book Preliminar</h2>
+      <p style="color:var(--muted);margin-top:6px">Material com fichas técnicas, implantação e imagens conceituais.</p>
+      <a class="btn" href="/downloads/GRANOSCAR_MATERIAL_PRELIMINAR_VENDAS.pdf" download style="margin-top:8px"><ion-icon name="download-outline"></ion-icon>Baixar Book (PDF)</a>
+      <div style="color:var(--muted);font-size:0.85rem;margin-top:8px">*Comercialização sujeita ao registro do memorial de incorporação.</div>
+    </section>
+  -->
+
+    <!-- CONTATO
+    <section id="contato" style="margin-top:18px;margin-bottom:18px">
+      <h2>Contato & Agendamento</h2>
+      <p style="color:var(--muted);margin-top:6px">Atendimento exclusivo: agende uma apresentação personalizada com
+        nosso consultor.</p>
+
+      <form class="form" onsubmit="event.preventDefault()" aria-label="Formulário de contato">
+        <input type="text" placeholder="Nome completo" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Telefone" required />
+        <textarea placeholder="Mensagem (opcional)" rows="3"></textarea>
+        <button type="submit">Agendar contato</button>
+      </form>
+      <br>
+ -->
+
+      <div style="color:var(--muted);margin-top:8px; text-align:center">
+        <h2>Para mais informações:<br></h2>
+
+    <!-- CARD DO CORRETOR -->
+    <div class="corretor-card">
+      <div class="corretor-info">
+        <img src="media/profile.jpeg" alt="Sid - Corretor Trisul Vendas" class="corretor-foto fs-trigger" loading="lazy">
+        <div class="corretor-details">
+          <h3 class="corretor-nome">Sid</h3>
+          <p class="corretor-creci">CRECI 268.448 • Corretor Trisul Vendas</p>
+          <div class="corretor-contacts" style="">
+            <a href="https://wa.me/5511918975200?text=Gostaria%20de%20receber%20mais%20informações%20do%20Gran%20Oscar!" target="_blank">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              WhatsApp
+            </a>
+            <a href="mailto:sidcorretor@trisulvendas.com.br">
+              <ion-icon name="mail-outline"></ion-icon>
+              Email
+            </a>
+            <a href="https://instagram.com/osidsilva" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div>© Gran Oscar — Material Preliminar</div>
+      <div style="color:var(--muted)">Corretor Sid Trisul Vendas</div>
+    </footer>
+  </div>
+
+  <!-- Floating contact buttons -->
+  <div class="contact-bar" aria-hidden="false" style="text-align:center;">
+    <a class="wsp" href="https://wa.me/5511918975200?text=Gostaria%20de%20receber%20mais%20informações%20do%20Gran%20Oscar!" target="_blank"
+      aria-label="WhatsApp">
+      <ion-icon name="logo-whatsapp"></ion-icon>WhatsApp
+    </a>
+    <a class="mail" href="mailto:sidcorretor@trisulvendas.com.br" aria-label="Email">
+      <ion-icon name="mail-outline"></ion-icon>Email
+    </a>
+  </div>
+
+  <!-- Fullscreen overlay -->
+  <div class="fs-overlay" id="fsOverlay">
+    <img id="fsImg" alt="Visualização em tela cheia">
+  </div>
+
+  <script>
+    // Menu toggle
+    const open = document.getElementById('openMenu');
+    const close = document.getElementById('closeMenu');
+    const nav = document.getElementById('mobileNav');
+    if (open && close && nav) {
+      open.addEventListener('click', () => {
+        nav.classList.add('open');
+        nav.setAttribute('aria-hidden', 'false')
+      });
+      close.addEventListener('click', () => {
+        nav.classList.remove('open');
+        nav.setAttribute('aria-hidden', 'true')
+      });
+      // close when clicking a link
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        nav.classList.remove('open');
+        nav.setAttribute('aria-hidden', 'true')
+      }))
+    }
+
+    // Fullscreen functionality
+    (function() {
+      const overlay = document.getElementById('fsOverlay');
+      const fsImg = document.getElementById('fsImg');
+      
+      // Open fullscreen when clicking on images with fs-trigger class
+      document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('fs-trigger')) {
+          fsImg.src = e.target.src;
+          fsImg.alt = e.target.alt;
+          overlay.classList.add('open');
+        }
+      });
+      
+      // Close fullscreen when clicking on overlay
+      overlay.addEventListener('click', function() {
+        overlay.classList.remove('open');
+      });
+      
+      // Close fullscreen with Esc key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          overlay.classList.remove('open');
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>
