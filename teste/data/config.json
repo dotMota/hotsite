@@ -1,0 +1,40 @@
+{
+  "app": {
+    "name": "Sistema de Landing Pages Imobiliárias",
+    "version": "2.0.0",
+    "defaultTheme": "luxury-gold",
+    "defaultAgent": "sid-silva"
+  },
+  "site": {
+    "title": "Imóveis de Alto Padrão",
+    "description": "Encontre o imóvel dos seus sonhos com os melhores corretores especializados",
+    "url": "https://seusite.com.br",
+    "logo": "media/logo.png"
+  },
+  "global": {
+    "maxWidth": "1200px",
+    "fontFamily": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial",
+    "ioniconsVersion": "7.1.0"
+  },
+  "breakpoints": {
+    "mobile": "768px",
+    "tablet": "1024px",
+    "desktop": "1200px"
+  },
+  "animations": {
+    "duration": "0.3s",
+    "easing": "ease-in-out"
+  },
+  "seo": {
+    "defaultLanguage": "pt-BR",
+    "defaultLocale": "pt_BR",
+    "siteName": "Imóveis de Alto Padrão"
+  },
+  "features": {
+    "lazyLoading": true,
+    "smoothScroll": true,
+    "darkMode": false,
+    "analytics": false
+  }
+}
+

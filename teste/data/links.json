@@ -1,0 +1,58 @@
+{
+  "agents": {
+    "sid-silva": {
+      "id": "sid-silva",
+      "name": "Sid Silva",
+      "fullName": "Sid Silva",
+      "creci": "CRECI 268.448",
+      "company": "Trisul Vendas",
+      "photo": "media/agents/sid-silva.jpeg",
+      "bio": "Especialista em imóveis de alto padrão em São Paulo",
+      "contacts": {
+        "whatsapp": {
+          "number": "5511918975200",
+          "display": "(11) 91897-5200"
+        },
+        "email": "sidcorretor@trisulvendas.com.br",
+        "instagram": "@osidsilva",
+        "website": "https://sidsilva.com.br"
+      },
+      "social": {
+        "instagram": "https://instagram.com/osidsilva",
+        "linkedin": "",
+        "facebook": ""
+      },
+      "specialties": [
+        "Imóveis de Alto Padrão",
+        "Lançamentos Exclusivos",
+        "Região de Moema",
+        "Investimentos Imobiliários"
+      ],
+      "active": true
+    }
+  },
+  "companies": {
+    "trisul": {
+      "id": "trisul",
+      "name": "Trisul Vendas",
+      "logo": "media/companies/trisul-logo.png",
+      "website": "https://trisul.com.br",
+      "phone": "(11) 3456-7890",
+      "address": "São Paulo, SP"
+    }
+  },
+  "whatsappTemplates": {
+    "interesse": "Olá! Tenho interesse no empreendimento {PRODUCT_NAME}. Gostaria de mais informações.",
+    "visita": "Gostaria de agendar uma visita ao {PRODUCT_NAME}. Quando seria possível?",
+    "proposta": "Quero receber uma proposta comercial para o {PRODUCT_NAME}.",
+    "plantas": "Gostaria de ver as plantas disponíveis do {PRODUCT_NAME}.",
+    "financiamento": "Preciso de informações sobre financiamento para o {PRODUCT_NAME}.",
+    "book": "Quero receber o material completo do {PRODUCT_NAME}."
+  },
+  "globalContacts": {
+    "supportEmail": "contato@imobiliaria.com.br",
+    "supportPhone": "(11) 3456-7890",
+    "emergencyPhone": "(11) 99999-9999"
+  }
+}
+

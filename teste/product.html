@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags (serão preenchidas dinamicamente) -->
+  <title id="page-title">Carregando...</title>
+  <meta name="description" content="" id="page-description">
+  <meta name="keywords" content="" id="page-keywords">
+  <meta name="author" content="" id="page-author">
+  <link rel="canonical" href="" id="page-canonical">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="" id="og-title">
+  <meta property="og:description" content="" id="og-description">
+  <meta property="og:image" content="" id="og-image">
+  <meta property="og:url" content="" id="og-url">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="" id="twitter-title">
+  <meta name="twitter:description" content="" id="twitter-description">
+  <meta name="twitter:image" content="" id="twitter-image">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+  
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="themes/variables.css">
+  <link rel="stylesheet" href="themes/light-theme.css" data-theme-css="light-theme">
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- Component CSS -->
+  <link rel="stylesheet" href="components/header/header.css">
+  <link rel="stylesheet" href="components/hero/hero.css">
+  <link rel="stylesheet" href="components/features/features.css">
+  <link rel="stylesheet" href="components/location/location.css">
+  <link rel="stylesheet" href="components/agent/agent.css">
+  <link rel="stylesheet" href="components/footer/footer.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json" id="structured-data">
+  </script>
+</head>
+
+<body class="theme-luxury-gold">
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+      <p>Carregando empreendimento...</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header-component" class="site-header">
+    <!-- Será carregado dinamicamente -->
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section id="hero-component" class="hero-section">
+      <!-- Será carregado dinamicamente -->
+    </section>
+
+    <!-- Features Section -->
+    <section id="features-component" class="features-section section">
+      <!-- Será carregado dinamicamente -->
+    </section>
+
+    <!-- Location Section -->
+    <section id="location-component" class="location-section section">
+      <!-- Será carregado dinamicamente -->
+    </section>
+
+    <!-- Agent Section -->
+    <section id="agent-component" class="agent-section">
+      <!-- Será carregado dinamicamente -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer-component" class="site-footer">
+    <!-- Será carregado dinamicamente -->
+  </footer>
+
+  <!-- Floating Contact -->
+  <div id="floating-contact" class="floating-contact">
+    <!-- Será carregado dinamicamente -->
+  </div>
+
+  <!-- Fullscreen Image Overlay -->
+  <div id="fullscreen-overlay" class="fullscreen-overlay">
+    <div class="fullscreen-content">
+      <button class="fullscreen-close" aria-label="Fechar">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <img src="" alt="" id="fullscreen-image">
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/theme-switcher.js"></script>
+  <script src="scripts/component-loader.js"></script>
+  <script src="components/header/header.js"></script>
+  <script src="components/hero/hero.js"></script>
+  <script src="components/features/features.js"></script>
+  <script src="components/location/location.js"></script>
+  <script src="components/agent/agent.js"></script>
+  <script src="components/footer/footer.js"></script>
+  <script src="scripts/product-app.js"></script>
+
+  <style>
+    /* Estilos específicos da página de produto */
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: var(--z-modal);
+      transition: opacity var(--transition-normal);
+    }
+
+    .loading-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .loading-spinner {
+      text-align: center;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid var(--color-neutral-200);
+      border-top: 3px solid var(--color-accent);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto var(--spacing-md);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .fullscreen-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: var(--z-modal);
+      padding: var(--spacing-lg);
+    }
+
+    .fullscreen-overlay.open {
+      display: flex;
+    }
+
+    .fullscreen-content {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .fullscreen-close {
+      position: absolute;
+      top: var(--spacing-lg);
+      right: var(--spacing-lg);
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1;
+      transition: background var(--transition-fast);
+    }
+
+    .fullscreen-close:hover {
+      background: white;
+    }
+
+    .fullscreen-close ion-icon {
+      font-size: 24px;
+      color: var(--color-text-primary);
+    }
+
+    #fullscreen-image {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-2xl);
+    }
+
+    .floating-contact {
+      position: fixed;
+      bottom: var(--spacing-xl);
+      right: var(--spacing-xl);
+      z-index: var(--z-fixed);
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-sm);
+    }
+
+    .floating-btn {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      padding: var(--spacing-md);
+      border-radius: var(--border-radius-lg);
+      text-decoration: none;
+      font-weight: var(--font-weight-semibold);
+      font-size: var(--font-size-sm);
+      color: white;
+      box-shadow: var(--shadow-lg);
+      transition: all var(--transition-fast);
+    }
+
+    .floating-btn:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: var(--shadow-xl);
+      color: white;
+    }
+
+    .floating-btn.whatsapp {
+      background: #25d366;
+    }
+
+    .floating-btn.email {
+      background: var(--color-accent);
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .floating-contact {
+        bottom: var(--spacing-lg);
+        right: var(--spacing-lg);
+      }
+
+      .fullscreen-close {
+        top: var(--spacing-md);
+        right: var(--spacing-md);
+        width: 36px;
+        height: 36px;
+      }
+
+      .fullscreen-close ion-icon {
+        font-size: 20px;
+      }
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Seções */
+    .section {
+      padding: var(--spacing-4xl) 0;
+    }
+
+    .section:first-of-type {
+      padding-top: var(--spacing-2xl);
+    }
+
+    /* Animações de entrada */
+    .fade-in-up {
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Estados de carregamento */
+    .component-loading {
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.6;
+    }
+
+    .component-loading::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--color-neutral-300);
+      border-top: 2px solid var(--color-accent);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+  </style>
+</body>
+</html>
+

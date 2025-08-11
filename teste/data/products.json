@@ -1,0 +1,183 @@
+{
+  "products": [
+    {
+      "id": "gran-oscar",
+      "active": true,
+      "featured": true,
+      "agentId": "sid-silva",
+      "companyId": "trisul",
+      "seo": {
+        "title": "Gran Oscar — Residências de Alto Padrão em Moema | Sid Silva",
+        "description": "Gran Oscar em Moema: plantas generosas (370–657 m²), wellness com cold plunge e saunas, piscina com raia, quadra de tênis e curadoria de arte. Acabamento premium e serviços que transformam a casa em um clube privativo.",
+        "keywords": "Gran Oscar, apartamentos de alto padrão em Moema, imóveis de luxo São Paulo, lançamento Trisul, corretor Sid Silva, perto do Parque Ibirapuera, plantas 370 657 m2, wellness cold plunge, quadra tenis Moema",
+        "ogImage": "media/products/gran-oscar/fachada.jpeg"
+      },
+      "branding": {
+        "logo": "GO",
+        "title": "Gran Oscar",
+        "subtitle": "Residências de Alto Padrão — Moema",
+        "theme": "light-theme"
+      },
+      "basic": {
+        "name": "Gran Oscar",
+        "type": "Residencial",
+        "status": "Lançamento",
+        "delivery": "2026",
+        "location": {
+          "neighborhood": "Moema",
+          "city": "São Paulo",
+          "state": "SP",
+          "address": "Av. Indianópolis, 500 & Alameda dos Nhambiquaras, 367",
+          "zipCode": "04063-000"
+        }
+      },
+      "card": {
+        "badge": "Lançamento Exclusivo",
+        "title": "Gran Oscar",
+        "subtitle": "Moema - São Paulo",
+        "description": "Residências de alto padrão com plantas de 370 a 657m², wellness completo e localização privilegiada.",
+        "image": "media/products/gran-oscar/card-image.jpeg",
+        "specs": [
+          "370 — 657 m²",
+          "4 — 6 vagas",
+          "42 unidades"
+        ],
+        "highlights": [
+          "Wellness & Spa",
+          "Quadra de Tênis",
+          "Arte & Cultura"
+        ],
+        "priceRange": "Consulte valores"
+      },
+      "hero": {
+        "badge": "Lançamento Exclusivo",
+        "title": "O endereço onde arte, espaço e privacidade se encontram",
+        "description": "Gran Oscar é um projeto pensado para quem deseja morar envolto em estética e conforto: plantas generosas (370–657m²), pé-direito amplo, acabamento premium e uma programação de serviços que transforma a casa em um clube privativo.",
+        "specs": [
+          {
+            "value": "42 unidades",
+            "label": "2 torres"
+          },
+          {
+            "value": "370 — 657 m²",
+            "label": "Tipologias generosas"
+          },
+          {
+            "value": "4 — 6 vagas",
+            "label": "Vagas privativas"
+          }
+        ],
+        "ctas": [
+          {
+            "text": "Falar no WhatsApp",
+            "icon": "logo-whatsapp",
+            "type": "primary",
+            "action": "whatsapp",
+            "template": "interesse"
+          },
+          {
+            "text": "Receber Book",
+            "type": "secondary",
+            "action": "whatsapp",
+            "template": "book"
+          },
+          {
+            "text": "Ver Plantas",
+            "type": "ghost",
+            "action": "whatsapp",
+            "template": "plantas"
+          }
+        ],
+        "highlight": "**Por que Gran Oscar?** Praça central com espelho d'água, wellness (cold plunge, saunas, salas de massagem), quadra de tênis, piscina com raia, lounge gourmet e espaços de arte com curadoria. Um projeto que nasce para encantar.",
+        "images": [
+          {
+            "src": "media/products/gran-oscar/fachada.jpeg",
+            "alt": "Gran Oscar Moema - fachada moderna com praça central e espelho d'água",
+            "title": "Fachada — Gran Oscar Ibirapuera",
+            "size": "large"
+          },
+          {
+            "src": "media/products/gran-oscar/praca.jpeg",
+            "alt": "Gran Oscar Moema - praça central com paisagismo",
+            "title": "Praça Central — Gran Oscar",
+            "size": "small"
+          },
+          {
+            "src": "media/products/gran-oscar/embasamento.jpeg",
+            "alt": "Gran Oscar Moema - embasamento e área comum",
+            "title": "Embasamento — Gran Oscar",
+            "size": "small"
+          }
+        ]
+      },
+      "features": {
+        "title": "Diferenciais que encantam",
+        "description": "Espaços pensados para bem-estar, convivência e privacidade — da rotina ao entretenimento.",
+        "items": [
+          {
+            "icon": "leaf-outline",
+            "title": "Praça central & Paisagismo",
+            "description": "Projeto paisagístico assinado com espelho d'água e trajetos de contemplação."
+          },
+          {
+            "icon": "fitness-outline",
+            "title": "Wellness & Spa",
+            "description": "Cold plunge, sauna, pilates e salas de massagem para rotina de saúde e relaxamento."
+          },
+          {
+            "icon": "tennisball-outline",
+            "title": "Sport & Club",
+            "description": "Quadra de tênis, courts, piscina com raia e club house para eventos privados."
+          },
+          {
+            "icon": "people-outline",
+            "title": "Kids & Family",
+            "description": "Brinquedoteca, kids gourmet e espaços para teens com segurança e criatividade."
+          },
+          {
+            "icon": "cafe-outline",
+            "title": "Serviços Premium",
+            "description": "Lobby bar, beauty care, coworking e concierge — rotina prática e refinada."
+          },
+          {
+            "icon": "color-palette-outline",
+            "title": "Espaços de Arte",
+            "description": "Galeria, ateliers e áreas de convivência com curadoria para ações culturais."
+          }
+        ]
+      },
+      "location": {
+        "title": "Localização — Moema",
+        "description": "Posição privilegiada próxima ao Parque Ibirapuera, shoppings e escolas internacionais.",
+        "subtitle": "Conheça seu novo endereço:",
+        "coordinates": {
+          "lat": -23.5989,
+          "lng": -46.6622
+        },
+        "mapUrl": "https://www.google.com/maps?q=Av.+Indian%C3%B3polis,+500+%26+Alameda+dos+Nhambiquaras,+367,+Moema,+S%C3%A3o+Paulo,+SP&hl=pt-BR&z=16&output=embed",
+        "nearby": [
+          {
+            "name": "Parque Ibirapuera",
+            "distance": "500m",
+            "type": "lazer"
+          },
+          {
+            "name": "Shopping Ibirapuera",
+            "distance": "1.2km",
+            "type": "shopping"
+          },
+          {
+            "name": "Colégio Bandeirantes",
+            "distance": "800m",
+            "type": "educacao"
+          }
+        ]
+      },
+      "footer": {
+        "copyright": "© Gran Oscar — Material Preliminar",
+        "disclaimer": "Comercialização sujeita ao registro do memorial de incorporação."
+      }
+    }
+  ]
+}
+

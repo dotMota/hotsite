@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title id="page-title">Imóveis de Alto Padrão | Encontre seu Lar dos Sonhos</title>
+  <meta name="description" content="Descubra os melhores empreendimentos imobiliários de alto padrão. Apartamentos exclusivos com localização privilegiada e acabamento premium." id="page-description">
+  <meta name="keywords" content="imóveis alto padrão, apartamentos luxo, lançamentos imobiliários, São Paulo, Moema, investimento imobiliário">
+  <meta name="author" content="Sistema de Landing Pages Imobiliárias">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Imóveis de Alto Padrão | Encontre seu Lar dos Sonhos" id="og-title">
+  <meta property="og:description" content="Descubra os melhores empreendimentos imobiliários de alto padrão." id="og-description">
+  <meta property="og:image" content="media/og-image.jpg" id="og-image">
+  <meta property="og:url" content="" id="og-url">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Imóveis de Alto Padrão" id="twitter-title">
+  <meta name="twitter:description" content="Descubra os melhores empreendimentos imobiliários." id="twitter-description">
+  <meta name="twitter:image" content="media/og-image.jpg" id="twitter-image">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+  
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="themes/variables.css">
+  <link rel="stylesheet" href="themes/light-theme.css" data-theme-css="light-theme">
+  
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- Component Styles -->
+  <link rel="stylesheet" href="components/header/header.css">
+  <link rel="stylesheet" href="components/product-card/product-card.css">
+  <link rel="stylesheet" href="components/footer/footer.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json" id="structured-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Imóveis de Alto Padrão",
+    "url": "",
+    "description": "Portal de imóveis de alto padrão com os melhores empreendimentos",
+    "inLanguage": "pt-BR"
+  }
+  </script>
+</head>
+
+<body class="theme-luxury-gold">
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+      <p>Carregando empreendimentos...</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header-component" class="site-header">
+    <!-- Será carregado dinamicamente -->
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-background">
+        <div class="hero-gradient"></div>
+        <div class="hero-pattern"></div>
+      </div>
+      
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <ion-icon name="home-outline"></ion-icon>
+            <span>Imóveis de Alto Padrão</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Encontre seu 
+            <span class="hero-title-highlight">Lar dos Sonhos</span>
+          </h1>
+          
+          <p class="hero-description">
+            Descubra os melhores empreendimentos imobiliários com localização privilegiada, 
+            acabamento premium e infraestrutura completa para você e sua família.
+          </p>
+          
+          <div class="hero-cta-buttons">
+            <a href="#products" class="hero-cta primary">
+              <ion-icon name="search-outline"></ion-icon>
+              <span>Ver Empreendimentos</span>
+            </a>
+            <a href="#" class="hero-cta secondary" id="hero-whatsapp">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              <span>Falar com Especialista</span>
+            </a>
+          </div>
+          
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-icon">
+                <ion-icon name="business-outline"></ion-icon>
+              </div>
+              <span class="stat-number" id="total-products">0</span>
+              <span class="stat-label">Empreendimentos Exclusivos</span>
+            </div>
+            <div class="stat">
+              <div class="stat-icon">
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+              <span class="stat-number" id="total-agents">0</span>
+              <span class="stat-label">Corretores Especializados</span>
+            </div>
+            <div class="stat">
+              <div class="stat-icon">
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Satisfação Garantida</span>
+            </div>
+          </div>
+          
+          <div class="hero-features">
+            <div class="hero-feature">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+              <span>Segurança Total</span>
+            </div>
+            <div class="hero-feature">
+              <ion-icon name="location-outline"></ion-icon>
+              <span>Localização Premium</span>
+            </div>
+            <div class="hero-feature">
+              <ion-icon name="diamond-outline"></ion-icon>
+              <span>Acabamento Luxo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <ion-icon name="apps-outline"></ion-icon>
+            <span>Portfólio Exclusivo</span>
+          </div>
+          <h2 class="section-title">Empreendimentos Disponíveis</h2>
+          <p class="section-description">
+            Conheça nossa seleção cuidadosa de imóveis de alto padrão, 
+            cada um pensado para oferecer o máximo em conforto e sofisticação.
+          </p>
+        </div>
+        
+        <!-- Filters -->
+        <div class="filters-container">
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+              <ion-icon name="apps-outline"></ion-icon>
+              <span>Todos</span>
+            </button>
+            <button class="filter-btn" data-filter="featured">
+              <ion-icon name="star-outline"></ion-icon>
+              <span>Destaques</span>
+            </button>
+            <button class="filter-btn" data-filter="launch">
+              <ion-icon name="rocket-outline"></ion-icon>
+              <span>Lançamentos</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div id="products-grid" class="products-grid">
+          <!-- Cards serão carregados dinamicamente -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="empty-state hidden">
+          <div class="empty-icon">
+            <ion-icon name="home-outline"></ion-icon>
+          </div>
+          <h3>Nenhum empreendimento encontrado</h3>
+          <p>Tente ajustar os filtros ou entre em contato para conhecer novos lançamentos.</p>
+          <a href="#" class="btn btn-primary" id="empty-contact">
+            <ion-icon name="chatbubble-outline"></ion-icon>
+            Falar com Especialista
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-background">
+        <div class="cta-pattern"></div>
+      </div>
+      
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-icon">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+          </div>
+          
+          <h2 class="cta-title">Não encontrou o que procura?</h2>
+          <p class="cta-description">
+            Nossa equipe de especialistas está pronta para encontrar o imóvel perfeito 
+            para você. Entre em contato e receba atendimento personalizado.
+          </p>
+          
+          <div class="cta-buttons">
+            <a href="#" class="cta-btn primary" id="contact-whatsapp">
+              <div class="cta-btn-icon">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </div>
+              <div class="cta-btn-content">
+                <span class="cta-btn-title">WhatsApp</span>
+                <span class="cta-btn-subtitle">Resposta imediata</span>
+              </div>
+            </a>
+            
+            <a href="#" class="cta-btn secondary" id="contact-email">
+              <div class="cta-btn-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="cta-btn-content">
+                <span class="cta-btn-title">Email</span>
+                <span class="cta-btn-subtitle">Atendimento detalhado</span>
+              </div>
+            </a>
+          </div>
+          
+          <div class="cta-features">
+            <div class="cta-feature">
+              <ion-icon name="time-outline"></ion-icon>
+              <span>Atendimento 24h</span>
+            </div>
+            <div class="cta-feature">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+              <span>Consultoria Gratuita</span>
+            </div>
+            <div class="cta-feature">
+              <ion-icon name="heart-outline"></ion-icon>
+              <span>Atendimento Personalizado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer-component" class="site-footer">
+    <!-- Será carregado dinamicamente -->
+  </footer>
+
+  <!-- Floating Contact -->
+  <div id="floating-contact" class="floating-contact">
+    <!-- Será carregado dinamicamente -->
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/theme-switcher.js"></script>
+  <script src="components/header/header.js"></script>
+  <script src="components/product-card/product-card.js"></script>
+  <script src="components/footer/footer.js"></script>
+  <script src="scripts/app.js"></script>
+
+  <style>
+    /* ===== HOMEPAGE STYLES - MOBILE FIRST ===== */
+    
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: var(--spacing-4xl) 0 var(--spacing-5xl);
+    }
+
+    .hero-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+
+    .hero-gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, 
+        var(--color-surface) 0%, 
+        var(--color-surface-muted) 50%, 
+        var(--color-accent-light) 100%);
+      opacity: 0.8;
+    }
+
+    .hero-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        radial-gradient(circle at 25% 25%, var(--color-accent) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, var(--color-accent) 1px, transparent 1px);
+      background-size: 60px 60px, 40px 40px;
+      opacity: 0.05;
+      animation: patternMove 20s linear infinite;
+    }
+
+    @keyframes patternMove {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(60px, 60px); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      background: var(--color-surface);
+      border: var(--border-width-thin) solid var(--color-border);
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border-radius: var(--border-radius-full);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-accent);
+      margin-bottom: var(--spacing-xl);
+      box-shadow: var(--shadow-md);
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    .hero-badge ion-icon {
+      font-size: 16px;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: var(--font-weight-extrabold);
+      line-height: 1.1;
+      color: var(--color-text-primary);
+      margin-bottom: var(--spacing-lg);
+      animation: fadeInUp 0.6s ease-out 0.1s both;
+    }
+
+    .hero-title-highlight {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+    }
+
+    .hero-description {
+      font-size: var(--font-size-lg);
+      line-height: var(--line-height-relaxed);
+      color: var(--color-text-secondary);
+      margin-bottom: var(--spacing-3xl);
+      animation: fadeInUp 0.6s ease-out 0.2s both;
+    }
+
+    .hero-cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-md);
+      margin-bottom: var(--spacing-4xl);
+      animation: fadeInUp 0.6s ease-out 0.3s both;
+    }
+
+    .hero-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--spacing-sm);
+      padding: var(--spacing-lg) var(--spacing-2xl);
+      border-radius: var(--border-radius-xl);
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      text-decoration: none;
+      transition: all var(--transition-fast);
+      border: var(--border-width-medium) solid transparent;
+      min-height: 56px;
+    }
+
+    .hero-cta.primary {
+      background: var(--color-accent);
+      color: white;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero-cta.primary:hover {
+      background: var(--color-accent-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-xl);
+      color: white;
+    }
+
+    .hero-cta.secondary {
+      background: var(--color-surface);
+      color: var(--color-text-primary);
+      border-color: var(--color-border-strong);
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-cta.secondary:hover {
+      background: var(--color-surface-elevated);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      color: var(--color-text-primary);
+    }
+
+    .hero-cta ion-icon {
+      font-size: 20px;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+      margin-bottom: var(--spacing-3xl);
+      animation: fadeInUp 0.6s ease-out 0.4s both;
+    }
+
+    .stat {
+      text-align: center;
+      padding: var(--spacing-lg);
+      background: var(--color-surface);
+      border-radius: var(--border-radius-xl);
+      border: var(--border-width-thin) solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stat-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--gradient-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--spacing-md);
+    }
+
+    .stat-icon ion-icon {
+      font-size: 24px;
+      color: white;
+    }
+
+    .stat-number {
+      display: block;
+      font-size: var(--font-size-2xl);
+      font-weight: var(--font-weight-extrabold);
+      color: var(--color-accent);
+      margin-bottom: var(--spacing-xs);
+    }
+
+    .stat-label {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+      font-weight: var(--font-weight-medium);
+    }
+
+    .hero-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--spacing-lg);
+      animation: fadeInUp 0.6s ease-out 0.5s both;
+    }
+
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      padding: var(--spacing-sm) var(--spacing-lg);
+      background: var(--color-surface);
+      border-radius: var(--border-radius-lg);
+      border: var(--border-width-thin) solid var(--color-border);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-medium);
+      color: var(--color-text-secondary);
+    }
+
+    .hero-feature ion-icon {
+      font-size: 16px;
+      color: var(--color-accent);
+    }
+
+    /* Products Section */
+    .products-section {
+      background: var(--color-surface);
+      padding: var(--spacing-5xl) 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: var(--spacing-4xl);
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      background: var(--color-accent-light);
+      color: var(--color-accent);
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border-radius: var(--border-radius-full);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-semibold);
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .section-title {
+      font-size: var(--font-size-3xl);
+      font-weight: var(--font-weight-extrabold);
+      color: var(--color-text-primary);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .section-description {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-secondary);
+      line-height: var(--line-height-relaxed);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .filters-container {
+      margin-bottom: var(--spacing-3xl);
+      text-align: center;
+    }
+
+    .filters {
+      display: inline-flex;
+      gap: var(--spacing-xs);
+      background: var(--color-surface-elevated);
+      padding: var(--spacing-xs);
+      border-radius: var(--border-radius-xl);
+      border: var(--border-width-thin) solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .filter-btn {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      padding: var(--spacing-md) var(--spacing-lg);
+      border: none;
+      background: transparent;
+      border-radius: var(--border-radius-lg);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-medium);
+      color: var(--color-text-muted);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--color-accent);
+      color: white;
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .filter-btn ion-icon {
+      font-size: 16px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: var(--spacing-5xl) var(--spacing-lg);
+      background: var(--color-surface-elevated);
+      border-radius: var(--border-radius-xl);
+      border: var(--border-width-thin) solid var(--color-border);
+    }
+
+    .empty-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--color-accent-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--spacing-lg);
+    }
+
+    .empty-icon ion-icon {
+      font-size: 40px;
+      color: var(--color-accent);
+    }
+
+    .empty-state h3 {
+      margin-bottom: var(--spacing-md);
+      color: var(--color-text-primary);
+    }
+
+    .empty-state p {
+      color: var(--color-text-secondary);
+      margin-bottom: var(--spacing-xl);
+    }
+
+    /* CTA Section */
+    .cta-section {
+      position: relative;
+      background: var(--color-surface-muted);
+      padding: var(--spacing-5xl) 0;
+      overflow: hidden;
+    }
+
+    .cta-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+
+    .cta-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(45deg, var(--color-accent) 1px, transparent 1px),
+        linear-gradient(-45deg, var(--color-accent) 1px, transparent 1px);
+      background-size: 30px 30px;
+      opacity: 0.03;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cta-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--gradient-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--spacing-xl);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .cta-icon ion-icon {
+      font-size: 40px;
+      color: white;
+    }
+
+    .cta-title {
+      font-size: var(--font-size-3xl);
+      font-weight: var(--font-weight-extrabold);
+      color: var(--color-text-primary);
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .cta-description {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-secondary);
+      line-height: var(--line-height-relaxed);
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-lg);
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-lg);
+      padding: var(--spacing-xl);
+      background: var(--color-surface);
+      border: var(--border-width-thin) solid var(--color-border);
+      border-radius: var(--border-radius-xl);
+      text-decoration: none;
+      transition: all var(--transition-fast);
+      box-shadow: var(--shadow-md);
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .cta-btn.primary {
+      border-color: var(--color-accent);
+      background: linear-gradient(135deg, var(--color-surface), var(--color-accent-light));
+    }
+
+    .cta-btn-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .cta-btn.primary .cta-btn-icon {
+      background: #25d366;
+    }
+
+    .cta-btn.secondary .cta-btn-icon {
+      background: var(--color-accent);
+    }
+
+    .cta-btn-icon ion-icon {
+      font-size: 24px;
+      color: white;
+    }
+
+    .cta-btn-content {
+      text-align: left;
+      flex: 1;
+    }
+
+    .cta-btn-title {
+      display: block;
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-text-primary);
+      margin-bottom: var(--spacing-xs);
+    }
+
+    .cta-btn-subtitle {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-muted);
+    }
+
+    .cta-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--spacing-lg);
+    }
+
+    .cta-feature {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      padding: var(--spacing-sm) var(--spacing-lg);
+      background: var(--color-surface);
+      border-radius: var(--border-radius-lg);
+      border: var(--border-width-thin) solid var(--color-border);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-medium);
+      color: var(--color-text-secondary);
+    }
+
+    .cta-feature ion-icon {
+      font-size: 16px;
+      color: var(--color-accent);
+    }
+
+    .floating-contact {
+      position: fixed;
+      bottom: var(--spacing-lg);
+      right: var(--spacing-lg);
+      z-index: var(--z-fixed);
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-sm);
+    }
+
+    .floating-btn {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      padding: var(--spacing-md) var(--spacing-lg);
+      border-radius: var(--border-radius-lg);
+      text-decoration: none;
+      font-weight: var(--font-weight-semibold);
+      font-size: var(--font-size-sm);
+      color: white;
+      box-shadow: var(--shadow-lg);
+      transition: all var(--transition-fast);
+      min-width: 120px;
+      justify-content: center;
+    }
+
+    .floating-btn:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: var(--shadow-xl);
+      color: white;
+    }
+
+    .floating-btn.whatsapp {
+      background: #25d366;
+    }
+
+    .floating-btn.email {
+      background: var(--color-accent);
+    }
+
+    .floating-btn ion-icon {
+      font-size: 18px;
+    }
+
+    /* Loading States */
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: var(--z-modal);
+      transition: opacity var(--transition-normal);
+    }
+
+    .loading-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .loading-spinner {
+      text-align: center;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid var(--color-neutral-200);
+      border-top: 3px solid var(--color-accent);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto var(--spacing-md);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Animações */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsividade - Tablet */
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: var(--font-size-5xl);
+      }
+
+      .hero-cta-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cta-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .filters {
+        flex-wrap: nowrap;
+      }
+    }
+
+    /* Responsividade - Desktop */
+    @media (min-width: 1024px) {
+      .hero-content {
+        max-width: 800px;
+      }
+
+      .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .floating-contact {
+        bottom: var(--spacing-xl);
+        right: var(--spacing-xl);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      }
+    }
+  </style>
+</body>
+</html>
+

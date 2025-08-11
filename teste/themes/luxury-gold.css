@@ -1,0 +1,181 @@
+/* ===== TEMA LUXURY GOLD ===== */
+/* Tema inspirado no Gran Oscar - Elegante e sofisticado */
+
+:root {
+  /* === PALETA DE CORES LUXURY GOLD === */
+  
+  /* Dourado principal */
+  --color-gold-50: #fefce8;
+  --color-gold-100: #fef3c7;
+  --color-gold-200: #fde68a;
+  --color-gold-300: #fcd34d;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+  --color-gold-600: #d97706;
+  --color-gold-700: #b45309;
+  --color-gold-800: #92400e;
+  --color-gold-900: #78350f;
+  
+  /* Azul escuro elegante */
+  --color-navy-50: #f8fafc;
+  --color-navy-100: #f1f5f9;
+  --color-navy-200: #e2e8f0;
+  --color-navy-300: #cbd5e1;
+  --color-navy-400: #94a3b8;
+  --color-navy-500: #64748b;
+  --color-navy-600: #475569;
+  --color-navy-700: #334155;
+  --color-navy-800: #1e293b;
+  --color-navy-900: #0f172a;
+  
+  /* Tons pastéis elegantes */
+  --color-cream-50: #fefdfb;
+  --color-cream-100: #fef7ed;
+  --color-cream-200: #fed7aa;
+  --color-sage-50: #f0fdf4;
+  --color-sage-100: #dcfce7;
+  --color-sage-200: #bbf7d0;
+  
+  /* === CORES SEMÂNTICAS DO TEMA === */
+  
+  /* Cores principais */
+  --color-primary-50: var(--color-gold-50);
+  --color-primary-100: var(--color-gold-100);
+  --color-primary-200: var(--color-gold-200);
+  --color-primary-300: var(--color-gold-300);
+  --color-primary-400: var(--color-gold-400);
+  --color-primary-500: var(--color-gold-600);
+  --color-primary-600: var(--color-gold-700);
+  --color-primary-700: var(--color-gold-800);
+  --color-primary-800: var(--color-gold-900);
+  --color-primary-900: var(--color-gold-900);
+  
+  /* Cores neutras */
+  --color-neutral-50: var(--color-navy-50);
+  --color-neutral-100: var(--color-navy-100);
+  --color-neutral-200: var(--color-navy-200);
+  --color-neutral-300: var(--color-navy-300);
+  --color-neutral-400: var(--color-navy-400);
+  --color-neutral-500: var(--color-navy-500);
+  --color-neutral-600: var(--color-navy-600);
+  --color-neutral-700: var(--color-navy-700);
+  --color-neutral-800: var(--color-navy-800);
+  --color-neutral-900: var(--color-navy-900);
+  
+  /* === CORES DE APLICAÇÃO === */
+  
+  /* Backgrounds */
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-elevated: var(--color-neutral-50);
+  --color-surface-muted: var(--color-cream-50);
+  
+  /* Textos */
+  --color-text-primary: var(--color-navy-900);
+  --color-text-secondary: var(--color-navy-700);
+  --color-text-muted: var(--color-navy-500);
+  --color-text-inverse: #ffffff;
+  
+  /* Bordas */
+  --color-border: var(--color-navy-200);
+  --color-border-muted: var(--color-navy-100);
+  --color-border-strong: var(--color-navy-300);
+  
+  /* Accent e destaque */
+  --color-accent: var(--color-gold-600);
+  --color-accent-hover: var(--color-gold-700);
+  --color-accent-light: var(--color-gold-100);
+  
+  /* Estados */
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+  --color-info: #0284c7;
+  
+  /* === GRADIENTES === */
+  --gradient-primary: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-700));
+  --gradient-secondary: linear-gradient(135deg, var(--color-navy-600), var(--color-navy-800));
+  --gradient-accent: linear-gradient(135deg, var(--color-gold-400), var(--color-gold-600));
+  --gradient-subtle: linear-gradient(135deg, var(--color-cream-50), var(--color-sage-50));
+  
+  /* === SOMBRAS TEMÁTICAS === */
+  --shadow-gold: 0 4px 14px 0 rgba(245, 158, 11, 0.15);
+  --shadow-navy: 0 4px 14px 0 rgba(15, 23, 42, 0.1);
+  --shadow-elegant: 0 8px 32px 0 rgba(15, 23, 42, 0.08);
+  
+  /* === CORES ESPECÍFICAS DE COMPONENTES === */
+  
+  /* Botões */
+  --btn-primary-bg: var(--color-accent);
+  --btn-primary-hover: var(--color-accent-hover);
+  --btn-primary-text: var(--color-text-inverse);
+  
+  --btn-secondary-bg: transparent;
+  --btn-secondary-border: var(--color-border-strong);
+  --btn-secondary-text: var(--color-text-primary);
+  --btn-secondary-hover: var(--color-surface-elevated);
+  
+  --btn-ghost-bg: transparent;
+  --btn-ghost-border: var(--color-border-muted);
+  --btn-ghost-text: var(--color-text-muted);
+  --btn-ghost-hover: var(--color-accent-light);
+  
+  /* Cards */
+  --card-bg: var(--color-surface);
+  --card-border: var(--color-border);
+  --card-shadow: var(--shadow-elegant);
+  --card-hover-shadow: var(--shadow-xl);
+  
+  /* Header */
+  --header-bg: var(--color-surface);
+  --header-border: var(--color-border);
+  --header-text: var(--color-text-primary);
+  
+  /* Footer */
+  --footer-bg: var(--color-surface-muted);
+  --footer-text: var(--color-text-muted);
+  --footer-border: var(--color-border);
+  
+  /* Floating elements */
+  --floating-whatsapp: #25d366;
+  --floating-email: var(--color-accent);
+  --floating-shadow: var(--shadow-xl);
+  
+  /* === TIPOGRAFIA TEMÁTICA === */
+  --font-family-heading: var(--font-family-primary);
+  --font-family-body: var(--font-family-primary);
+  
+  /* === EFEITOS ESPECIAIS === */
+  --glass-effect: rgba(255, 255, 255, 0.1);
+  --backdrop-blur: blur(10px);
+  --overlay-dark: rgba(15, 23, 42, 0.8);
+  --overlay-light: rgba(255, 255, 255, 0.9);
+}
+
+/* === MODO ESCURO (OPCIONAL) === */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-navy-900);
+    --color-surface: var(--color-navy-800);
+    --color-surface-elevated: var(--color-navy-700);
+    --color-text-primary: var(--color-neutral-100);
+    --color-text-secondary: var(--color-neutral-300);
+    --color-text-muted: var(--color-neutral-400);
+    --color-border: var(--color-navy-600);
+  }
+}
+
+/* === UTILITÁRIOS DE TEMA === */
+.theme-luxury-gold {
+  /* Aplicação automática do tema quando a classe é adicionada */
+}
+
+/* Variações de intensidade do dourado */
+.gold-light { color: var(--color-gold-400); }
+.gold-medium { color: var(--color-gold-600); }
+.gold-dark { color: var(--color-gold-800); }
+
+.bg-gold-light { background-color: var(--color-gold-100); }
+.bg-gold-medium { background-color: var(--color-gold-500); }
+.bg-gold-dark { background-color: var(--color-gold-700); }
+
